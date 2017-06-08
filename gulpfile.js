@@ -18,6 +18,7 @@ gulp.task( "js", function() {
             this.emit( "end" );
         } )
         .pipe( sourcemaps.write() )
+        .pipe( concat( "app.js" ) )
         .pipe( rename( function( path ) {
             path.basename += ".min";
         } ) )

@@ -3,38 +3,34 @@
     <head>
         <meta charset="UTF-8" />
 
-        <title>Flappy Bird</title>
+        <title>Yet Another Tetris Clone</title>
 
         <style>
-            body {
-                background: url( 'resources/bcg.png' );
+
+            h1, h2, ul {
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
             }
 
             h1 {
-                font-family: 'Fira Sans';
-                letter-spacing: 4px;
-                color: turquoise;
                 text-align: center;
-                text-shadow: 0 0 2px rgba( 0, 0, 0, 0.8 );
-                text-transform: uppercase;
             }
 
             canvas {
                 display: block;
                 margin: 20px auto;
-                border: 1px solid rgba( 0, 50, 100, 0.4 );
-                box-shadow: 0 0 20px 0 rgba( 0, 0, 0, 0.4 );
-            }
-
-            ::selection {
-                background: transparent;
             }
         </style>
     </head>
     <body>
-        <h1>Flappy Bird</h1>
+        <h1>Yet Another Tetris Clone</h1>
 
-        <canvas id="game" width="288" height="511"></canvas>
+        <canvas id="game" width="408" height="498"></canvas>
+        <h2>Controls</h2>
+        <ul>
+            <li>Space: Start or restart the game</li>
+            <li>Left or right arrow: Move</li>
+            <li>Up arrow: Rotate</li>
+        </ul>
 
         <script src="bin/app.min.js"></script>
     </body>
